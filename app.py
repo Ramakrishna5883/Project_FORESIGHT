@@ -1,5 +1,18 @@
 import sys
+import types
 from pathlib import Path
+
+# Resolve ROOT_DIR (repository root containing app.py)
+ROOT_DIR = Path(__file__).resolve().parent
+
+# Runtime Package Aliasing:
+# Redirect imports of "Project_FORESIGHT.*" to folders in the current root directory
+# to survive case-sensitive deployments (like Streamlit Community Cloud on Linux)
+if "Project_FORESIGHT" not in sys.modules:
+    project_foresight_module = types.ModuleType("Project_FORESIGHT")
+    project_foresight_module.__path__ = [str(ROOT_DIR)]
+    sys.modules["Project_FORESIGHT"] = project_foresight_module
+
 import streamlit as st
 import os
 
@@ -11,10 +24,26 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Setup path resolver
-ROOT_DIR = Path(__file__).resolve().parent
-sys.path.append(str(ROOT_DIR.parent))
-sys.path.append(str(ROOT_DIR))
+# Dark theme styling
+st.markdown("""
+    <style>
+    [data-testid="stAppViewContainer"] { background: #0f1117; color: #e8e8f0; }
+    [data-testid="stSidebar"]          { background: #16192a; }
+    h1, h2, h3 { color: #c5c9e8 !important; }
+    </style>
+    """, unsafe_allow_html=True)
+
+# Dynamically locate the dashboard directory to survive any folder structures
+home_path = next(ROOT_DIR.glob("**/Home.py"), None)
+if home_path:
+    CURRENT_DIR = home_path.parent
+else:
+    CURRENT_DIR = ROOT_DIR / "dashboard"
+
+# Define page files
+page_files = ["Home.py", "Dashboard.py", "Forecast.py", "Inventory.py", "Analytics.py", "Model.py", "Settings.py"]
+pages_dict = {}
+missing_files = []
 
 # Case-insensitive file search helper
 def find_file_case_insensitive(directory: Path, filename: str) -> Path:
@@ -24,30 +53,6 @@ def find_file_case_insensitive(directory: Path, filename: str) -> Path:
         if item.is_file() and item.name.lower() == filename.lower():
             return item
     return None
-
-# Find the dashboard directory dynamically
-home_file = None
-# Search recursively
-for root, dirs, files in os.walk(str(ROOT_DIR)):
-    # skip venv and dotfiles
-    if ".venv" in root or "venv" in root or ".git" in root:
-        continue
-    for f in files:
-        if f.lower() == "home.py":
-            home_file = Path(root) / f
-            break
-    if home_file:
-        break
-
-if home_file:
-    CURRENT_DIR = home_file.parent
-else:
-    CURRENT_DIR = ROOT_DIR / "dashboard"
-
-# Define page files
-page_files = ["Home.py", "Dashboard.py", "Forecast.py", "Inventory.py", "Analytics.py", "Model.py", "Settings.py"]
-pages_dict = {}
-missing_files = []
 
 for pf in page_files:
     resolved_path = find_file_case_insensitive(CURRENT_DIR, pf)
