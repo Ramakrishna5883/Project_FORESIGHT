@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# Ignore generated datasets and SQLite DB in git
+database/foresight.db
+data/processed/
+data/reports/
+data/raw/*.csv
+models/*.pkl
