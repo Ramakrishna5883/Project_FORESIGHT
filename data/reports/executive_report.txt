@@ -1,0 +1,5 @@
+Project FORESIGHT Executive Report
+----------------------------------
+Total SKUs: 150
+Sales at Risk: ₹17.87 Lakh
+Capital Locked: ₹1.71 Lakh

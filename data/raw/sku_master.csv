@@ -1,0 +1,154 @@
+sku_id,category,subcategory,launch_date,unit_cost,list_price
+NBL-1000,Furnishings,Sofas,2024-06-25,83.49,248.28
+NBL-1001,Decor,Wall Art,2023-03-07,175.81,495.4
+NBL-1002,Small Appliances,Air Purifiers,2023-03-31,85.47,187.46
+NBL-1003,Furnishings,Storage,2024-03-26,149.51,345.29
+NBL-1004,Decor,Wall Art,2024-01-24,18.98,55.5
+NBL-1005,Small Appliances,Kettles,2024-06-14,68.98,217.5
+NBL-1006,Furnishing,Tables,2024-06-28,41.48,97.34
+NBL-1007,Decor,Wall Art,2024-06-04,136.1,428.44
+NBL-1008,Small Appliance,Air Purifiers,2024-09-25,88.76,168.92
+NBL-1009,Furnishings,Tables,2023-11-29,47.03,125.65
+NBL-1010,Decor,Wall Art,2024-08-05,128.45,269.72
+NBL-1011,Small Appliances,Blenders,2024-07-17,74.65,153.88
+NBL-1012,Furnishings,Tables,2023-04-08,42.38,68.31
+NBL-1013,Decor,Vases,2024-04-10,129.29,368.37
+NBL-1014,Small Appliances,Air Purifiers,2024-02-03,32.05,57.15
+NBL-1015,Furnishings,Tables,2023-11-26,105.22,297.14
+NBL-1016,Décor,Lighting,2024-01-23,104.18,217.35
+NBL-1017,Small Appliances,Blenders,2024-11-18,78.27,232.11
+NBL-1018,Furnishings,Sofas,2024-07-29,56.4,116.73
+NBL-1019,Decor,Wall Art,2023-03-30,142.83,380.34
+NBL-1020,SMALL APPLIANCES,Air Purifiers,2023-10-20,36.72,60.09
+NBL-1021,Furnishings,Storage,2024-05-20,87.44,162.47
+NBL-1022,Decor,Vases,2023-04-17,127.77,295.64
+NBL-1023,Small Appliance,Kettles,2023-07-31,116.41,253.65
+NBL-1024,Furnishings,Sofas,2023-08-26,164.28,446.76
+NBL-1025,Decor,Vases,2024-06-18,141.95,389.94
+NBL-1026,Small Appliances,Heaters,2024-05-30,24.58,74.83
+NBL-1027,Furnishings,Chairs,2024-05-07,60.62,153.17
+NBL-1028,Decor,Wall Art,2023-11-21,138.47,380.95
+NBL-1029,Small Appliance,Heaters,2023-08-05,108.46,286.31
+NBL-1030,Furnishings,Storage,2023-10-19,15.16,36.24
+NBL-1031,Decor,Lighting,2023-04-12,25.79,65.51
+NBL-1032,Small Appliances,Blenders,2024-10-09,107.94,232.61
+NBL-1033,Furnishings,Chairs,2023-01-16,172.87,409.99
+NBL-1034,Decor,Wall Art,2023-02-27,91.71,218.74
+NBL-1035,Small Appliances,Kettles,2024-02-05,89.44,181.31
+NBL-1036,Furnishings,Tables,2023-12-31,83.49,136.47
+NBL-1037,Décor,Wall Art,2024-09-19,32.12,79.87
+NBL-1038,Small Appliances,Air Purifiers,2023-03-25,121.42,335.51
+NBL-1039,furnishings,Chairs,2023-08-13,165.55,325.86
+NBL-1040,Decor,Wall Art,2024-01-24,71.8,210.21
+NBL-1041,Small Appliances,Heaters,2023-08-10,171.9,355.05
+NBL-1042,furnishings,Storage,2023-06-29,169.0,314.91
+NBL-1043,Decor,Rugs,2024-11-09,161.37,451.48
+NBL-1044,Small Appliances,Heaters,2023-06-06,97.24,204.74
+NBL-1045,Furnishings,Storage,2023-08-23,72.27,126.56
+NBL-1046,decor,Lighting,2023-09-23,169.13,335.82
+NBL-1047,Small Appliances,Kettles,2024-08-04,34.36,64.83
+NBL-1048,Furnishings,Tables,2024-09-04,41.79,87.61
+NBL-1049,decor,Rugs,2024-11-11,94.13,172.28
+NBL-1050,Small Appliances,Kettles,2023-07-15,124.56,223.58
+NBL-1051,Furnishings,Sofas,2024-10-11,107.95,207.23
+NBL-1052,DECOR,Lighting,2023-01-18,135.11,244.51
+NBL-1053,Small Appliances,Air Purifiers,2024-10-11,76.38,158.99
+NBL-1054,Furnishings,Tables,2024-04-09,172.37,354.79
+NBL-1055,DECOR,Rugs,2023-01-18,103.49,270.56
+NBL-1056,Small Appliances,Kettles,2024-06-08,174.19,444.82
+NBL-1057,FURNISHINGS,Chairs,2024-05-31,88.39,252.41
+NBL-1058,Decor,Lighting,2023-03-18,150.66,433.13
+NBL-1059,Small Appliances,Blenders,2024-01-07,112.23,335.39
+NBL-1060,Furnishings,Chairs,2023-10-16,72.36,165.08
+NBL-1061,Decor,Vases,2024-08-30,86.07,171.84
+NBL-1062,Small Appliance,Heaters,2024-06-06,148.45,262.53
+NBL-1063,furnishings,Tables,2023-09-08,149.84,314.14
+NBL-1064,Decor,Vases,2024-10-06,36.47,74.97
+NBL-1065,Small Appliances,Blenders,2023-03-22,11.64,19.66
+NBL-1066,Furnishings,Storage,2023-02-07,109.68,294.95
+NBL-1067,Decor,Vases,2023-08-11,94.78,284.34
+NBL-1068,Small Appliances,Air Purifiers,2023-01-31,39.22,77.61
+NBL-1069,Furnishings,Tables,2024-02-04,79.6,133.63
+NBL-1070,Décor,Vases,2024-01-02,25.49,74.78
+NBL-1071,Small Appliances,Heaters,2024-04-27,153.09,466.04
+NBL-1072,Furnishings,Sofas,2023-08-13,142.07,373.36
+NBL-1073,Decor,Vases,2024-06-01,100.2,242.76
+NBL-1074,Small Appliances,Kettles,2024-08-06,74.24,194.75
+NBL-1075,Furnishings,Chairs,2023-02-12,90.19,204.46
+NBL-1076,Decor,Wall Art,2023-08-25,71.02,150.85
+NBL-1077,Small Appliances,Blenders,2023-05-09,59.06,184.16
+NBL-1078,Furnishings,Tables,2024-08-20,64.48,158.41
+NBL-1079,Decor,Rugs,2023-12-09,146.36,358.93
+NBL-1080,Small Appliances,Air Purifiers,2023-02-20,134.4,258.57
+NBL-1081,FURNISHINGS,Chairs,2023-12-19,30.72,79.35
+NBL-1082,DECOR,Lighting,2024-05-23,22.53,69.79
+NBL-1083,Small Appliances,Heaters,2023-04-29,110.11,314.06
+NBL-1084,FURNISHINGS,Storage,2024-10-13,51.58,131.23
+NBL-1085,Decor,Lighting,2024-03-07,37.46,93.8
+NBL-1086,Small Appliances,Blenders,2023-11-23,97.89,276.27
+NBL-1087,FURNISHINGS,Tables,2023-12-11,111.13,343.39
+NBL-1088,Decor,Wall Art,2024-05-19,121.15,274.98
+NBL-1089,Small Appliances,Kettles,2023-05-26,65.39,198.61
+NBL-1090,Furnishings,Tables,2024-03-20,70.64,148.56
+NBL-1091,Decor,Rugs,2024-11-03,169.01,388.83
+NBL-1092,Small Appliances,Kettles,2023-03-31,103.11,319.42
+NBL-1093,Furnishings,Tables,2024-03-04,72.73,231.18
+NBL-1094,Decor,Rugs,2024-08-15,28.38,84.03
+NBL-1095,small appliances,Heaters,2023-03-27,109.18,294.54
+NBL-1096,Furnishings,Sofas,2023-11-15,149.97,310.82
+NBL-1097,Decor,Rugs,2023-11-06,59.93,183.96
+NBL-1098,Small Appliances,Air Purifiers,2023-03-19,179.49,539.68
+NBL-1099,Furnishings,Storage,2024-08-08,26.3,84.12
+NBL-1100,decor,Wall Art,2024-03-31,23.56,71.51
+NBL-1101,Small Appliances,Kettles,2023-11-14,141.6,271.47
+NBL-1102,Furnishing,Sofas,2023-07-22,14.22,22.88
+NBL-1103,Decor,Vases,2024-02-29,145.85,289.03
+NBL-1104,Small Appliances,Kettles,2023-02-10,145.77,449.62
+NBL-1105,Furnishings,Storage,2024-05-03,152.13,253.18
+NBL-1106,Decor,Wall Art,2023-03-29,94.78,264.65
+NBL-1107,Small Appliances,Kettles,2024-08-18,34.7,96.31
+NBL-1108,Furnishings,Sofas,2023-07-09,130.1,412.2
+NBL-1109,Decor,Lighting,2023-02-08,114.01,190.14
+NBL-1110,Small Appliances,Blenders,2024-05-11,37.78,65.99
+NBL-1111,Furnishings,Chairs,2024-11-17,86.87,247.97
+NBL-1112,Decor,Vases,2024-02-05,32.96,102.63
+NBL-1113,Small Appliances,Blenders,2024-02-09,128.36,338.71
+NBL-1114,Furnishings,Sofas,2023-04-14,95.44,214.4
+NBL-1115,Decor,Wall Art,2023-03-25,31.06,63.52
+NBL-1116,Small Appliances,Air Purifiers,2023-10-27,113.09,295.78
+NBL-1117,Furnishings,Sofas,2023-10-14,45.43,115.45
+NBL-1118,Decor,Vases,2023-01-26,79.96,188.59
+NBL-1119,Small Appliances,Kettles,2024-02-05,105.31,286.78
+NBL-1120,Furnishings,Tables,2024-04-01,62.39,178.43
+NBL-1121,Decor,Wall Art,2023-10-29,115.67,251.82
+NBL-1122,Small Appliances,Heaters,2024-05-30,160.46,493.2
+NBL-1123,Furnishings,Tables,2023-12-31,145.58,306.17
+NBL-1124,Decor,Rugs,2023-12-12,27.93,47.91
+NBL-1125,Small Appliances,Heaters,2023-02-08,56.27,120.11
+NBL-1126,Furnishings,Tables,2023-08-08,135.74,220.37
+NBL-1127,Decor,Lighting,2024-08-22,72.03,132.95
+NBL-1128,Small Appliances,Air Purifiers,2023-03-25,70.77,221.76
+NBL-1129,Furnishings,Chairs,2024-06-24,61.49,166.04
+NBL-1130,Decor,Vases,2023-09-29,118.23,191.2
+NBL-1131,Small Appliances,Heaters,2024-01-03,36.17,67.47
+NBL-1132,Furnishings,Storage,2024-11-23,103.63,304.93
+NBL-1133,DECOR,Lighting,2023-04-10,85.1,189.61
+NBL-1134,Small Appliances,Heaters,2023-01-29,88.72,163.34
+NBL-1135,Furnishings,Chairs,2023-06-20,15.68,30.93
+NBL-1136,Décor,Vases,2023-05-17,108.87,260.12
+NBL-1137,Small Appliances,Blenders,2023-06-20,153.1,401.14
+NBL-1138,Furnishings,Chairs,2024-04-14,139.22,235.7
+NBL-1139,Decor,Lighting,2024-01-13,66.21,195.4
+NBL-1140,Small Appliances,Air Purifiers,2024-06-22,154.55,372.1
+NBL-1141,Furnishings,Chairs,2024-02-15,154.25,330.86
+NBL-1142,Decor,Vases,2024-01-07,26.06,58.31
+NBL-1143,Small Appliances,Air Purifiers,2024-03-17,38.53,82.54
+NBL-1144,Furnishings,Chairs,2023-01-18,167.52,388.17
+NBL-1145,Decor,Wall Art,2024-02-23,9.26,18.94
+NBL-1146,Small Appliances,Air Purifiers,2024-03-19,176.87,458.55
+NBL-1147,Furnishings,Storage,2024-06-17,163.37,449.78
+NBL-1148,Decor,Lighting,2024-07-01,157.09,280.02
+NBL-1149,Small Appliances,Heaters,2023-11-05,103.13,272.94
+NBL-1014,Small Appliances,Air Purifiers,2024-02-03,32.05,57.15
+NBL-1098,Small Appliances,Air Purifiers,2023-03-19,179.49,539.68
+NBL-1075,Furnishings,Chairs,2023-02-12,90.19,204.46
