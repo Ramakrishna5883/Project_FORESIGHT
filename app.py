@@ -1,7 +1,5 @@
 import sys
 from pathlib import Path
-sys.path.append(str(Path(__file__).resolve().parent.parent))
-
 import streamlit as st
 import os
 
@@ -13,32 +11,70 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Dark theme styling
-st.markdown("""
-    <style>
-    [data-testid="stAppViewContainer"] { background: #0f1117; color: #e8e8f0; }
-    [data-testid="stSidebar"]          { background: #16192a; }
-    h1, h2, h3 { color: #c5c9e8 !important; }
-    </style>
-    """, unsafe_allow_html=True)
-
-# Dynamically locate the dashboard directory to survive any folder structures
+# Setup path resolver
 ROOT_DIR = Path(__file__).resolve().parent
-home_path = next(ROOT_DIR.glob("**/Home.py"), None)
-if home_path:
-    CURRENT_DIR = home_path.parent
+sys.path.append(str(ROOT_DIR.parent))
+sys.path.append(str(ROOT_DIR))
+
+# Case-insensitive file search helper
+def find_file_case_insensitive(directory: Path, filename: str) -> Path:
+    if not directory.exists():
+        return None
+    for item in directory.iterdir():
+        if item.is_file() and item.name.lower() == filename.lower():
+            return item
+    return None
+
+# Find the dashboard directory dynamically
+home_file = None
+# Search recursively
+for root, dirs, files in os.walk(str(ROOT_DIR)):
+    # skip venv and dotfiles
+    if ".venv" in root or "venv" in root or ".git" in root:
+        continue
+    for f in files:
+        if f.lower() == "home.py":
+            home_file = Path(root) / f
+            break
+    if home_file:
+        break
+
+if home_file:
+    CURRENT_DIR = home_file.parent
 else:
     CURRENT_DIR = ROOT_DIR / "dashboard"
 
+# Define page files
+page_files = ["Home.py", "Dashboard.py", "Forecast.py", "Inventory.py", "Analytics.py", "Model.py", "Settings.py"]
+pages_dict = {}
+missing_files = []
+
+for pf in page_files:
+    resolved_path = find_file_case_insensitive(CURRENT_DIR, pf)
+    if resolved_path:
+        pages_dict[pf] = resolved_path
+    else:
+        missing_files.append(pf)
+
+if missing_files:
+    st.error("⚠️ FORESIGHT Deployment Diagnostics")
+    st.markdown(f"**Missing files under `{CURRENT_DIR}`:** {missing_files}")
+    st.markdown("**Files found in Root directory:**")
+    st.write(os.listdir(ROOT_DIR))
+    if CURRENT_DIR.exists():
+        st.markdown(f"**Files found in `{CURRENT_DIR.name}`:**")
+        st.write(os.listdir(CURRENT_DIR))
+    st.stop()
+
 pages = {
     "Overview": [
-        st.Page(CURRENT_DIR / "Home.py", title="Home", icon="🏠", default=True),
-        st.Page(CURRENT_DIR / "Dashboard.py", title="Dashboard", icon="📊"),
-        st.Page(CURRENT_DIR / "Forecast.py", title="Forecast Detail", icon="📈"),
-        st.Page(CURRENT_DIR / "Inventory.py", title="Inventory Management", icon="📦"),
-        st.Page(CURRENT_DIR / "Analytics.py", title="EDA & Analytics", icon="🔍"),
-        st.Page(CURRENT_DIR / "Model.py", title="Model Evaluation", icon="🔬"),
-        st.Page(CURRENT_DIR / "Settings.py", title="Settings", icon="⚙️")
+        st.Page(pages_dict["Home.py"], title="Home", icon="🏠", default=True),
+        st.Page(pages_dict["Dashboard.py"], title="Dashboard", icon="📊"),
+        st.Page(pages_dict["Forecast.py"], title="Forecast Detail", icon="📈"),
+        st.Page(pages_dict["Inventory.py"], title="Inventory Management", icon="📦"),
+        st.Page(pages_dict["Analytics.py"], title="EDA & Analytics", icon="🔍"),
+        st.Page(pages_dict["Model.py"], title="Model Evaluation", icon="🔬"),
+        st.Page(pages_dict["Settings.py"], title="Settings", icon="⚙️")
     ]
 }
 
