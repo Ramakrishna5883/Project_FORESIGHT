@@ -22,8 +22,13 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Helper to load navigation programmatically
-CURRENT_DIR = Path(__file__).resolve().parent / "dashboard"
+# Dynamically locate the dashboard directory to survive any folder structures
+ROOT_DIR = Path(__file__).resolve().parent
+home_path = next(ROOT_DIR.glob("**/Home.py"), None)
+if home_path:
+    CURRENT_DIR = home_path.parent
+else:
+    CURRENT_DIR = ROOT_DIR / "dashboard"
 
 pages = {
     "Overview": [
