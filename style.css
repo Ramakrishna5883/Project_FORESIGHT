@@ -1,11 +1,12 @@
 /* =========================
-   PROJECT FORESIGHT PREMIUM UI
+   PROJECT FORESIGHT PREMIUM DARK UI
    ========================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 html, body, [class*="css"] {
     font-family: 'Inter', sans-serif;
+    color: #f8fafc;
 }
 
 /* -------------------------
@@ -14,9 +15,9 @@ html, body, [class*="css"] {
 [data-testid="stAppViewContainer"] {
     background: linear-gradient(
         135deg,
-        #f8fafc 0%,
-        #eef2ff 50%,
-        #e0f2fe 100%
+        #0f172a 0%,
+        #111827 50%,
+        #1e1b4b 100%
     );
 }
 
@@ -24,13 +25,13 @@ html, body, [class*="css"] {
    Sidebar
 -------------------------- */
 [data-testid="stSidebar"] {
-    background: rgba(255,255,255,0.7);
+    background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(20px);
-    border-right: 1px solid rgba(255,255,255,0.4);
+    border-right: 1px solid rgba(255,255,255,0.08);
 }
 
 [data-testid="stSidebar"] * {
-    color: #0f172a;
+    color: #f8fafc;
 }
 
 /* -------------------------
@@ -42,9 +43,9 @@ h1 {
 
     background: linear-gradient(
         90deg,
-        #2563eb,
-        #7c3aed,
-        #06b6d4
+        #60a5fa,
+        #a78bfa,
+        #22d3ee
     );
 
     -webkit-background-clip: text;
@@ -52,7 +53,7 @@ h1 {
 }
 
 h2, h3 {
-    color: #1e293b !important;
+    color: #f8fafc !important;
     font-weight: 700 !important;
 }
 
@@ -60,40 +61,42 @@ h2, h3 {
    Glassmorphism Cards
 -------------------------- */
 div[data-testid="stMetric"] {
-    background: rgba(255,255,255,0.55);
+
+    background: rgba(30, 41, 59, 0.65);
 
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
 
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.08);
 
     border-radius: 24px;
 
     padding: 25px;
 
     box-shadow:
-        0 8px 32px rgba(31,38,135,0.12);
+        0 8px 32px rgba(0,0,0,0.35);
 
     transition: all 0.3s ease;
 }
 
 div[data-testid="stMetric"]:hover {
+
     transform: translateY(-6px);
 
     box-shadow:
-        0 20px 40px rgba(0,0,0,0.15);
+        0 20px 40px rgba(0,0,0,0.45);
 }
 
 /* KPI Label */
 [data-testid="stMetricLabel"] {
-    color: #475569 !important;
+    color: #cbd5e1 !important;
     font-size: 15px !important;
     font-weight: 600 !important;
 }
 
 /* KPI Value */
 [data-testid="stMetricValue"] {
-    color: #0f172a !important;
+    color: #ffffff !important;
     font-size: 34px !important;
     font-weight: 800 !important;
 }
@@ -102,9 +105,7 @@ div[data-testid="stMetric"]:hover {
    Containers
 -------------------------- */
 [data-testid="stVerticalBlock"] > div:has(.element-container) {
-
     border-radius: 22px;
-
 }
 
 /* -------------------------
@@ -112,13 +113,13 @@ div[data-testid="stMetric"]:hover {
 -------------------------- */
 [data-testid="stDataFrame"] {
 
-    background: rgba(255,255,255,0.75);
+    background: rgba(30, 41, 59, 0.7);
 
     backdrop-filter: blur(15px);
 
     border-radius: 20px;
 
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.08);
 
     padding: 10px;
 }
@@ -152,7 +153,7 @@ div[data-testid="stMetric"]:hover {
     transform: translateY(-3px);
 
     box-shadow:
-        0 10px 20px rgba(37,99,235,0.35);
+        0 10px 20px rgba(124,58,237,0.45);
 }
 
 /* -------------------------
@@ -160,9 +161,13 @@ div[data-testid="stMetric"]:hover {
 -------------------------- */
 .stSelectbox > div > div {
 
+    background: rgba(30, 41, 59, 0.8) !important;
+
+    color: white !important;
+
     border-radius: 12px !important;
 
-    border: 1px solid #dbeafe !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
 }
 
 /* -------------------------
@@ -170,7 +175,9 @@ div[data-testid="stMetric"]:hover {
 -------------------------- */
 .stTabs [data-baseweb="tab"] {
 
-    background: white;
+    background: rgba(30, 41, 59, 0.8);
+
+    color: #e2e8f0;
 
     border-radius: 12px;
 
@@ -195,7 +202,7 @@ div[data-testid="stMetric"]:hover {
 -------------------------- */
 .js-plotly-plot {
 
-    background: rgba(255,255,255,0.75) !important;
+    background: rgba(30, 41, 59, 0.7) !important;
 
     backdrop-filter: blur(15px);
 
@@ -204,7 +211,7 @@ div[data-testid="stMetric"]:hover {
     padding: 10px;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,0.08);
+        0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* -------------------------
@@ -215,7 +222,7 @@ div[data-testid="stMetric"]:hover {
 }
 
 ::-webkit-scrollbar-track {
-    background: #edf2f7;
+    background: #1e293b;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -247,5 +254,5 @@ div[data-testid="stMetric"]:hover {
     color: white;
 
     box-shadow:
-        0 20px 40px rgba(37,99,235,0.25);
+        0 20px 40px rgba(37,99,235,0.35);
 }
