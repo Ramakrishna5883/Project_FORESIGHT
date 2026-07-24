@@ -24,14 +24,18 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Dark theme styling
-st.markdown("""
-    <style>
-    [data-testid="stAppViewContainer"] { background: #0f1117; color: #e8e8f0; }
-    [data-testid="stSidebar"]          { background: #16192a; }
-    h1, h2, h3 { color: #c5c9e8 !important; }
-    </style>
-    """, unsafe_allow_html=True)
+# Load custom CSS
+def load_css():
+    css_file = ROOT_DIR / "style.css"
+
+    if css_file.exists():
+        with open(css_file) as f:
+            st.markdown(
+                f"<style>{f.read()}</style>",
+                unsafe_allow_html=True
+            )
+
+load_css()
 
 # Dynamically locate the dashboard directory to survive any folder structures
 home_path = next(ROOT_DIR.glob("**/Home.py"), None)
